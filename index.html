@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Temperature Conversion </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <section id="home">
+            <header><b> Temperature Conversion</b></header>
+        </section>
+        <div class="temperature">
+            <figure>
+                <img src="https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBMDeveloperSkillsNetwork-CD0101EN-SkillsNetwork/labs/Theia%20Labs/02%20-%20HTML5%20Elements/images/thermo.png" width =150/>
+            </figure>
+            <form id="calcTemp" onsubmit="compute(); return false"> 
+            <article>
+                <fieldset>
+                    <legend> Temperature </legend>
+                    <label for="temp">Enter the temperature to convert</label><br>
+                    <input type="number" name="temp" id="temp">
+                    <select name="temp_unit" id="temp_unit">
+                        <option value=0> ---no input--- </option>
+                        <option value="cel"> Celsius </option>
+                        <option value="fah"> Fahrenheit </option>
+                        <option value="kel"> Kelvin </option>
+                    </select><br>
+                    <input type="submit" name="tmp" id="submit"><br>
+                    <span id="result"></span>                    
+                </fieldset>
+            </article>
+            </form>
+        </div>
+    </body>
+</html>
